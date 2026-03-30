@@ -1,7 +1,7 @@
 # Lab 8: Computer Vision
 
 2.12/2.120 Intro to Robotics  
-Spring 2025[^1]
+Spring 2026[^1]
 
 <details>
   <summary>Table of Contents</summary>
@@ -32,7 +32,7 @@ In this lab, you will be trying out different functions from OpenCV to visualize
 
 ### 0.1 Python
 
-You should already have Python (version 3.9+) installed from [Lab 4](https://github.com/mit212/lab4_2025?tab=readme-ov-file#01-python). You can check which version of Python you have by entering `python3 -V` or `python -V` in your terminal.
+You should already have Python (version 3.9+) installed from [Lab 4](https://github.com/mit212/lab4_2026?tab=readme-ov-file#0-prelab-software-setup). You can check which version of Python you have by entering `python3 -V` or `python -V` in your terminal.
 
 ### 0.2 OpenCV
 
@@ -58,11 +58,11 @@ Make sure that you installed the library to the Python version you are using. If
 
 ### 0.6 [Optional] Intel RealSense Viewer 
 
-If you are on the UR5 team, it may be useful to download the Intel RealSense Viewer to set camera properties, view camera ouput, and view camera coordinate system. You can download it from [here](https://www.intelrealsense.com/sdk-2/). Scroll down to the Intel RealSense Viewer section and click Download.
+If you are on the UR5 team, it may be useful to download the Intel RealSense Viewer to set camera properties, view camera ouput, and view camera coordinate system. Information about how to get started with the RealSense camera and viewer are [here](https://www.realsenseai.com/get-started-depth-camera/), and you can download the package from the [librealsense GitHub repository](https://github.com/realsenseai/librealsense).
 
 ## 1 Hardware Set Up 
 
-Please review the [Canvas announcement regarding the Hardware/Software design review](https://canvas.mit.edu/courses/30408/discussion_topics/357910).
+Please review the Canvas announcement regarding the Hardware/Software design review.
 
 You will be using the built-in camera on your laptop. If your laptop does not have one, please ask the staff for an external camera.
 
@@ -178,4 +178,5 @@ The camera matrix is unique to each camera, so once calculated, it can be reused
   Version 4 - 2020: Jerry Ng, Rachel Hoffman, Steven Yeung, and Kamal Youcef-Toumi  
   Version 5 - 2020: Phillip Daniel  
   Version 6 - 2024: Jinger Chong  
-  Version 7 - 2025: Roberto Bolli Jr., Kaleb Blake
+  Version 7 - 2025: Roberto Bolli Jr., Kaleb Blake  
+  Version 8 - 2026: Stephan Stansfield
