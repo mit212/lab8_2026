@@ -34,5 +34,5 @@ for line in lines:                         # Plot lines over original feed
         cv2.line(cv_image,(x1,y1),(x2,y2),(0,0,255),2)
         
 cv2.imshow("Line_Detected_Image", cv_image)
+print("Detecting Lines...press any key to exit.")
 cv2.waitKey(0)
-print("Detecting Lines...")
