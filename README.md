@@ -62,7 +62,7 @@ If you are on the UR5 team, it may be useful to download the Intel RealSense Vie
 
 ## 1 Hardware Set Up 
 
-Please review the Canvas announcement regarding the Hardware/Software design review.
+Please review the [Canvas announcement](https://canvas.mit.edu/courses/36338/discussion_topics/422794) regarding the Hardware/Software design review.
 
 You will be using the built-in camera on your laptop. If your laptop does not have one, please ask the staff for an external camera.
 
