@@ -70,13 +70,21 @@ Additionally, you should choose an object, preferably one of a solid color, to u
 
 ## 2 Gamma Adjustment
 
-Clone this repository or download/extract the ZIP file to your computer. You can use any code editor that supports Python. We recommend using IDLE, Python's built-in editor that should have been installed alongside Python, to edit and run each file. Using Visual Studio Code to edit and run the code is fine as well.
+Clone this repository or download/extract the ZIP file to your computer. You can use any code editor that supports Python. We recommend using [IDLE](https://realpython.com/python-idle/), Python's built-in editor that should have been installed alongside Python, to edit and run each file. Using Visual Studio Code to edit and run the code is fine as well.
 
 In computer vision, one of the first things introduced is gamma adjustment or correction. To experiment with this concept, open and run `gammaAdj.py`.
 
 When you run this file, three windows will appear. One will show your unprocessed raw camera footage, another will show a processed (gamma adjusted image), and the last will have a slider. Play around with the slider and see what you observe (make it completely black or white).
 
 To stop running the script, click on the `IDLE Shell 3.x.x` window and press `Ctrl+C`, then close the shell window.
+
+<details> <summary><i> Script not working? </i></summary>
+
+If you get errors running the script, the following options may help:
+- Run the script with elevated privileges (e.g., on Mac, enter `sudo python3 gammaAdj.py`)
+- Uninstall OpenCV and reinstall the full OpenCV package using `pip install opencv-contrib-python` (details [here](https://pypi.org/project/opencv-contrib-python/))
+    
+</details>
 
 ## 3 Otsu’s Method for Automatic Image Thresholding
 
