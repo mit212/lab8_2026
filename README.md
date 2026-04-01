@@ -136,7 +136,7 @@ Don't just blindly change the thresholds until something happens. Look at the co
 
 ## 6 HSV vs RGB
 
-If you were paying very close attention, you may have noticed that ALL the algorithms before this section were conducted after converting your raw image into grayscale. With that in mind, we will now experiment with colors. For this section, in addition to the object you’ve been using, we ask that you find a few different colored objects to experiment with the robustness of the two methods for separation presented here. To begin the script, open and run `colorThresh.py`.
+If you were paying very close attention, you may have noticed that ALL the algorithms before this section were conducted after converting your raw image into grayscale. With that in mind, we will now experiment with colors. For this section, in addition to the object you’ve been using, we ask that you find a few different colored objects to experiment with the robustness of the two methods for separation presented here. To begin the script, open and run `colorThresh.py`. Play around with the RBG and HSV sliders to isolate your chosen objects one at a time.
 
 After capturing the objects of your choosing, you’ll want to note down the HSV values for the next part of the lab.
 
