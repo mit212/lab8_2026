@@ -86,6 +86,12 @@ If you get errors running the script, the following options may help:
     
 </details>
 
+<details> <summary><i> Wrong camera? </i></summary>
+
+If you have multiple cameras associated with your laptop, and the wrong one is selected, try changing the input value to `cap = cv2.VideoCapture(0)` which will change the camera the script uses.
+    
+</details>
+
 ## 3 Otsu’s Method for Automatic Image Thresholding
 
 It is important to note that one of the prime goals of computer vision is to separate an image into *what you care about* and *what you don’t care about*. Otsu’s method of thresholding is a good example of a simple method that algorithmically separates pixels into two separate classes. To use it, open and run `otsu.py`.
