@@ -81,7 +81,7 @@ To stop running the script, click on the `IDLE Shell 3.x.x` window and press `Ct
 <details> <summary><i> Script not working? </i></summary>
 
 If you get errors running the script, the following options may help:
-- Run the script with elevated privileges (e.g., on Mac, enter `sudo python3 gammaAdj.py`)
+- Run the script with elevated privileges (e.g., on Mac, enter `sudo python3 gammaAdj.py`). Sometimes this might take 2 tries!
 - Uninstall OpenCV and reinstall the full OpenCV package using `pip install opencv-contrib-python` (details [here](https://pypi.org/project/opencv-contrib-python/))
     
 </details>
@@ -126,7 +126,7 @@ You can find more information on the commands used [here](https://docs.opencv.or
 
 ### 5.3 Sudoku Grid
 
-Before running this on camera footage, you will be processing `sudoku.png`. Namely, edit the `TODO's` in `process.py`. The goal for this script is to isolate the grid lines (and **only** the grid lines) of the sudoku grid. If you see `TypeError: 'NoneType' object is not iterable`, no lines were detected in the Hough lines transform using your parameters.
+Finally, you will process `sudoku.png` using Hough Transforms. Namely, edit the `TODO's` in `process.py`. The goal for this script is to isolate the grid lines (and **only** the grid lines) of the sudoku grid. If you see `TypeError: 'NoneType' object is not iterable`, no lines were detected in the Hough lines transform using your parameters.
 
 Don't just blindly change the thresholds until something happens. Look at the code and understand how it works first. What intermediate image processing step do you need to get working properly before the Hough lines transform has a chance of detecting any lines in the image? (Hint: it rhynmes with "nanny")
 
