@@ -46,6 +46,9 @@ def main():
         # get threshold values
         lower_bound_HSV = np.array([l_h.get(), l_s.get(), l_v.get()])
         upper_bound_HSV = np.array([u_h.get(), u_s.get(), u_v.get()])
+        # optional TODO: input your HSV threshold values here
+        # lower_bound_HSV = np.array([0, 0, 0])
+        # upper_bound_HSV = np.array([255, 255, 255])
 
         # threshold
         mask_HSV = cv2.inRange(hsv_image, lower_bound_HSV, upper_bound_HSV)

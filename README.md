@@ -142,7 +142,7 @@ After capturing the objects of your choosing, you’ll want to note down the HSV
 
 ## 7 Morphological Operations
 
-After using color thresholding, you may have noticed that there are some features that remain in the image besides the object that you want to detect. Morphological operations are an excellent way of getting rid of extra features you don’t want and enlarging objects you do want. To experiment and find which operations work best, open and run `morphOps.py`. Use the HSV values from the [previous section](#6-hsv-vs-rgb).
+After using color thresholding, you may have noticed that there are some features that remain in the image besides the object that you want to detect. Morphological operations are an excellent way of getting rid of extra features you don’t want and enlarging objects you do want. To experiment and find which operations work best, open and run `morphOps.py`. Use the HSV values from the [previous section](#6-hsv-vs-rgb). (If you find the sliders annoying, you can instead input your values in the `lower_bound_HSV` and `upper_bound_HSV` variables.)
 
 Something else interesting about morphological operations is the kernel operator that is used. The kernel determines the shape of a pixel neighborhood over which the morphological operation (erosion, dilation, etc.) is taken. If you open the script, you’ll find a section of code that allows you to make your own kernel. A vertical line is given as an example in the comments. Rerun the script with a kernel of your own design.
 
