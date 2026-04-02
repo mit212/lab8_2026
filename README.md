@@ -172,7 +172,16 @@ Before we begin, we have to calculate the [camera matrix](https://docs.opencv.or
 
 The camera matrix is unique to each camera, so once calculated, it can be reused on other images taken by the same camera. We will use a standard test image known as a checkerboard to calibrate the camera.
 
-1. Run `apriltag_camera_calibration.py`. If you're having issues with the camera, try commenting out lines 35-38 in the code. The frame rate may be very low, since the algorithm OpenCV uses to detect the checkerboard is fairly resource intensive.
+1. Run `apriltag_camera_calibration.py`.
+
+    <details> <summary><i> Having issues with the camera? </i></summary>
+
+    - Try commenting out lines 36-39 in the code. The frame rate may be very low, since the algorithm OpenCV uses to detect the checkerboard is fairly resource intensive.
+    - If you are using a Mac or Linux machine, you may need to comment and uncomment lines 34 and 35, respectively.
+    - Note that you can change the device index in the VideoCapture function to change which camera is accessed.
+    
+    </details>
+
 2. Hold up the large checkerboard to the camera. If it is detected, you should see a series of colored lines, as shown below.
 
 <p align="center">

@@ -38,6 +38,7 @@ def main():
     # 3. Initialize Webcam
     #----------------------------------------------------------------------
     cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+    # cap = cv2.VideoCapture(0) # For MacOS or Linux, you may need to remove the cv2.CAP_DSHOW flag
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
     cap.set(cv2.CAP_PROP_AUTOFOCUS, 0)
@@ -151,7 +152,9 @@ def main():
             print(f"Detected Tag ID {tag_id}:")
             print(f"  Translation (x, y, z) [m]: {t.ravel()}")
 
-            cv2.putText(undistorted, "X: " + str(round(float(t[0]),2)) + ", Y: " + str(round(float(t[1]),2)) + ", Z: " + str(round(float(t[2]),2)), corners[0], cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)
+            cv2.putText(undistorted, "X: " + str(round(float(t.item(0)),2)) + ", Y: " + str(round(float(t.item(1)),2)) + ", Z: " + str(round(float(t.item(2)),2)), corners[0], cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)
+            # Deprecated array scalar indexing below. In newer numpy versions, use .item() instead of [0], [1], [2].
+            # cv2.putText(undistorted, "X: " + str(round(float(t[0]),2)) + ", Y: " + str(round(float(t[1]),2)) + ", Z: " + str(round(float(t[2]),2)), corners[0], cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 255), 2)
             
             print(f"  Rotation vector [deg]:     {rot_deg.ravel()}")
 

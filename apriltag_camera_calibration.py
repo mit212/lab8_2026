@@ -32,6 +32,7 @@ def main():
 
     # Open the default camera (device index 0)
     cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+    # cap = cv2.VideoCapture(0) # For MacOS or Linux, you may need to remove the cv2.CAP_DSHOW flag
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
     cap.set(cv2.CAP_PROP_AUTOFOCUS, 0)
